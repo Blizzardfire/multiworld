@@ -7,5 +7,5 @@ pip install .
 
 or
 
-pip install . --upgrade endstone
+pip install . --force-reinstall --no-deps
 
