@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endstone-multiworld"
+version = "0.14.0"
+description = "Multi-world plugin for Endstone (single package, adapts to hub or world mode)"
+requires-python = ">=3.10"
+dependencies = ["endstone", "psutil"]
+
+[project.entry-points."endstone"]
+multiworld = "endstone_multiworld:MultiWorld"
+
+[tool.setuptools.packages.find]
+where = ["src"]
